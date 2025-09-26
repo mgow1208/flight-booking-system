@@ -8,14 +8,13 @@ def price(out, ins, money):
   elif flights[out][ins]>1659 and flights[out][ins]<2400:
     money = 120*pe
   if flights[out]==flights[4] or flights[out]==flights[5]:
-    break
+      ()
   else:
     peifm=int(input("how many people will have in flight meals? Max 6 : "))
     money = money+(20*peifm)
   pepb=int(input("how many people will have priority boarding? Max 6 : "))
   money = money+(30*pepb)
   return money
-
 def OUT(out):
   loc = int(input("Paris, Barcelona, Madrid, Lisbon, Dublin, Belfast, Berlin, Amsterdam? Enter 1-8: "))
   out = loc-1
